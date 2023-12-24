@@ -13,13 +13,13 @@ interface display{
 
 const DisplayCard = ({product}:display) => {
   return (
-    <Card maxW='xs' m="0.5rem"  cursor={"pointer"} _hover={{boxShadow:"xl"}} bg={"brand.primary"} mx="auto" mt="1rem">
+    <Card maxW='xs' m="0.1rem"  cursor={"pointer"} _hover={{boxShadow:"xl"}} bg={"brand.primary"} mx="auto" mt="1rem">
     <CardBody>
    
       <AddToWishlist product={product} />
       <Link  href={`/products/${product.slug}`}>
       <Image
-        src={product.mainImg}
+        src={product.mainimage}
         alt={product.name}
         borderRadius='lg'
         mx={"auto"}
@@ -29,9 +29,9 @@ const DisplayCard = ({product}:display) => {
       />
       </Link>
       <Stack mt='6' spacing='3' textAlign={"center"}>
-        <Heading size='md' color={"brand.primaryDark"} fontFamily={"Playfair Display"}>{getSubstring(product.name,20)}</Heading>
+        {/* <Heading size='md' color={"brand.primaryDark"} fontFamily={"Playfair Display"}>{getSubstring(product.name,20)}</Heading> */}
         <Text color={"brand.primaryDark"} fontFamily={"Playfair Display"} textDecor="none" >
-        {getSubstring(product.description,30)}
+        {/* {getSubstring(product.description,30)} */}
         </Text>
         <AddToCart product={product}/>
       </Stack>

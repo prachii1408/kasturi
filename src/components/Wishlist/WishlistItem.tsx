@@ -1,3 +1,4 @@
+'use client'
 import { AppContext } from '@/context/AppContext';
 import { getSubstring } from '@/helpers';
 import { IItem } from '@/model';
@@ -22,19 +23,20 @@ const WishlistItem = ({item}:WishlistItemProps) => {
       py="1"
     >
       <GridItem>
-        <Link href={item.slug}>
+        <Link href="/">
           <Image
-            src={item.mainImg}
+            src={item.mainimage}
             boxSize="20px"
             rounded="full"
             borderWidth="1px"
             borderColor="gray.300"
+            alt="mainImage"
           />
         </Link>
       </GridItem>
       <GridItem colSpan={4}>
-        <Link href={item.slug}>
-          <Text fontSize="sm" title={item.name} textColor={"brand.primaryDark"} fontFamily={"Playfair Display"}> 
+        <Link href={`/products/${item.slug}`}>
+          <Text as="span" fontSize="sm" title={item.name} textColor={"brand.primaryDark"} fontFamily={"Playfair Display"}> 
             {getSubstring(item.name, 17)}
           </Text>
         </Link>

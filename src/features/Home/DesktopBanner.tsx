@@ -1,3 +1,4 @@
+'use client'
 import { Box,Text,Flex } from '@chakra-ui/react'
 import React from 'react'
 import { Image } from '@chakra-ui/react'

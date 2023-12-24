@@ -1,3 +1,4 @@
+'use client'
 import { Box,Image,Text,Flex } from '@chakra-ui/react'
 import React from 'react'
 import { mobileView, spanMobileStyles, textBoxMobileStyles,  textMobileStyles } from './BannerStyle'

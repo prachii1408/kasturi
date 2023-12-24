@@ -1,3 +1,4 @@
+'use client'
 import { Card, CardBody, Stack, Heading,Image,Text, IconButton } from '@chakra-ui/react'
 import React from 'react'
 import Link from 'next/link'
@@ -7,7 +8,7 @@ import {Swiper,SwiperSlide} from 'swiper/react'
 import SwiperOptions  from 'swiper'
 import {Navigation,Autoplay} from 'swiper/modules'
 import { Product } from './model'
-import { products } from '../mocks/products'
+
 import { getSubstring } from './helpers'
 import { BsFillSuitHeartFill } from 'react-icons/bs'
 import AddToWishlist from './components/AddToWishlist'
@@ -25,9 +26,10 @@ const ProductCard = ({product}:productCardProps) => {
   <CardBody >
   
 <Wish product={product} />
+
 <Link href={`/products/${product.slug}`}>
     <Image
-      src={product.mainImg}
+      src={product.mainimage}
       alt={product.name}
       data-swiper-parallax="-23"
       mx={"auto"}
@@ -38,7 +40,7 @@ const ProductCard = ({product}:productCardProps) => {
     <Stack mt='6' spacing='3' >
       <Heading size='md' color={"brand.primary"} fontFamily={"Playfair Display"}  data-swiper-parallax="-100">{getSubstring(product.name,20)}</Heading>
       <Text color={"brand.primary"} fontFamily={"Playfair Display"}  data-swiper-parallax="-200">
-      {getSubstring(product.description,30)}
+      {/* {getSubstring(product.description,30)} */}
       </Text>
      <AddToCart product={product}/>
     </Stack>

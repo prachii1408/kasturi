@@ -1,0 +1,42 @@
+export const GenderSchema={
+    name:"gender",
+    title:"Gender",
+    type:"document",
+    fields:[
+        {
+            name:'name',
+            title:'Name',
+            type:'string',
+            description:'Name of gender'
+        },
+        {
+            name:'image',
+            title:'Image',
+            type:'image',
+            options:{
+                hotspot:true
+            }
+        },
+        {
+            name:'slug',
+            title:'Slug',
+            type:'slug',
+            options:{
+                source:'name',
+                maxLength:100
+            }
+        },
+        {
+            name:'products',
+            title:'Products',
+            type:'array',
+            of:[
+                {
+                    type:'reference',
+                    to:[{type:'product'}]
+                }
+            ]
+        },
+       
+    ]
+}

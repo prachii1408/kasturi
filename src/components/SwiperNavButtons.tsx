@@ -16,6 +16,7 @@ const SwiperNavButtons = () => {
        color="brand.primaryDark"
        bgColor={"brand.primary"}
        onClick={()=>{
+        
         swiper.slidePrev()
        }}
        mx="1">  
@@ -29,6 +30,7 @@ const SwiperNavButtons = () => {
        color="brand.primaryDark"
        bgColor={"brand.primary"}
        onClick={()=>{
+        
         swiper.slideNext()
        }}
        mx="1">  

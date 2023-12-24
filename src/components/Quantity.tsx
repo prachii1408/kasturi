@@ -1,4 +1,4 @@
-import { Button, HStack, Input, useNumberInput } from '@chakra-ui/react'
+import { Button, HStack, Input, VStack, useNumberInput,Text } from '@chakra-ui/react'
 import React from 'react'
 
 interface QuantityProps{
@@ -30,11 +30,15 @@ const Quantity = ({
   const input = getInputProps()
 
   return (
-    <HStack maxW='320px'>
+    <VStack>
+      <Text fontFamily={"Baskervville"} textColor={"brand.primaryDark"} fontSize={{base:"1rem",md:"1.1rem",lg:"1.2rem"}} >Quantity</Text>
+       <HStack maxW='320px'>
       <Button {...inc} bgColor={"brand.primaryMedium"} textColor={"brand.primaryDark"}>+</Button>
       <Input {...input} textColor={"brand.primaryDark"} bgColor={"brand.primary"} w={{base:"4rem",lg:"4rem"}}/>
       <Button {...dec} bgColor={"brand.primaryMedium"} textColor={"brand.primaryDark"}>-</Button>
     </HStack>
+    </VStack>
+   
   )
 
 }

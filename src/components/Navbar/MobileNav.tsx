@@ -16,7 +16,7 @@ const MobileNav = () => {
      <Flex {...mobileNavStyles}>
         <Box><MobileNavMenu navItems={navItems}/></Box>
         <AppLogo />
-        <Stack{...mobileCartStyles}>
+        <Stack {...mobileCartStyles}>
             <Text><Wishlist /></Text>
             <Text><Cart /></Text>
         </Stack>

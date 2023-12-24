@@ -1,7 +1,7 @@
 import { AppContext } from '@/context/AppContext'
 import { Button } from '@chakra-ui/react'
 import React, { useContext, useEffect } from 'react'
-import { products } from '../../mocks/products';
+
 import { Product } from '@/model';
 
 interface AddToCartProps{
@@ -18,8 +18,8 @@ const AddToCart = ({product,count}:AddToCartProps) => {
       isAdded('cart',product.id)?(
         <Button 
         variant="outline" 
-        backgroundColor={"white"} 
-        borderColor={"brand.primary"} 
+        backgroundColor={"#fcf8f5"} 
+        borderColor={"brand.primaryMedium"} 
         rounded="full" 
         size="sm" w="150px" 
         fontFamily={"Playfair Display"} 
@@ -36,7 +36,10 @@ const AddToCart = ({product,count}:AddToCartProps) => {
         size="sm" w="150px" 
         fontFamily={"Playfair Display"} 
         textColor={"brand.primaryDark"} 
-        mx={"auto"} onClick={()=>addItem('cart',product,count)}>
+        mx={"auto"} onClick={()=>
+        addItem('cart',product,count)
+        
+        }>
         Add to Cart
       </Button>
       )

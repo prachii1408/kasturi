@@ -25,7 +25,29 @@ export const CategorySchema={
             options:{
                 hotspot:true
             }
-        }
+        },
+        {
+            name:'products',
+            title:'Products',
+            type:'array',
+            of:[
+                {
+                    type:'reference',
+                    to:[{type:'product'}]
+                }
+            ]
+        },
+        {
+            name:'subcategory',
+            title:'Sub Categories',
+            type:'array',
+            of:[
+                {
+                    type:'reference',
+                    to:[{type:'subcategory'}]
+                }
+            ]
+        },
        
     ]
 

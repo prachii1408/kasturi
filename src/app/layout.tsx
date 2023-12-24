@@ -29,7 +29,17 @@ export default function RootLayout({
       <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Playfair+Display&display=swap" rel="stylesheet"></link>
       
-      <meta title='description' content='Buy Jewellery online'></meta>
+      <meta title='description'  name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <style>{`
+          html,body{
+            width:100%;
+            height:100%;
+            padding: 0px;
+            margin:0px;
+            overflow-x:hidden;
+          }
+        `}</style>
+      
       </head>
      
       <body >

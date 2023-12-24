@@ -1,14 +1,14 @@
+'use client'
 import { AppContext } from '@/context/AppContext';
-import { Popover, PopoverTrigger, Button, Flex, PopoverContent, PopoverArrow, PopoverCloseButton, PopoverHeader, PopoverBody, PopoverFooter,Text } from '@chakra-ui/react';
+import { Popover, PopoverTrigger, Button, Flex, PopoverContent, PopoverArrow, PopoverCloseButton, PopoverHeader, PopoverBody, PopoverFooter,Text, Box } from '@chakra-ui/react';
 import React, { useContext } from 'react'
 import { BsHeart } from 'react-icons/bs';
 import WishlistItem from './WishlistItem';
 
 const Wishlist = () => {
-    const {
-        state: { wishlist },
-        resetItem,
-      } = useContext(AppContext);
+  const { state, resetItem } = useContext(AppContext);
+  const { wishlist } = state;
+   
   return (
     <Popover>
     <PopoverTrigger>
@@ -46,11 +46,14 @@ const Wishlist = () => {
         Wishlist
       </PopoverHeader>
       <PopoverBody p="1rem" color="brand.primaryDark" fontFamily={"Baskervvile"}>
+       
         {wishlist.length === 0 ? (
-          <>Your Wishlist is Empty</>
+         <>Your Wishlist is Empty</> 
         ) : (
           wishlist.map((item) => <WishlistItem key={item.id} item={item} />)
         )}
+        
+        
       </PopoverBody>
       <PopoverFooter>
         {wishlist.length !== 0 && (

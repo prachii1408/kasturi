@@ -19,14 +19,22 @@ export const ProductSchema={
             }
         },
         {
+            name:'weight',
+            title:'Weight',
+            type:'number',
+            description:'Weight of Product'
+        },
+        {
             name:'material',
             title:'Material',
-            type:'string',
+            type:'reference',
+            to:[{type:'material'}]
         },
         {
             name:'gender',
             title:'Gender',
-            type:'string',
+            type:'reference',
+            to:[{type:'gender'}]
         },
         {
             name:'category',
@@ -54,7 +62,8 @@ export const ProductSchema={
         {
             name:'subCategory',
             title:'Sub Category',
-            type:'string',
+            type:'reference',
+            to:[{type:'subcategory'}]
         },
         {
             name:'description',

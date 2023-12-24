@@ -1,3 +1,4 @@
+'use client'
 import React,{useContext} from 'react'
 import { Product } from '@/model';
 import { AppContext } from '@/context/AppContext';

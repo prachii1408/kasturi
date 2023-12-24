@@ -1,4 +1,5 @@
 import { BoxProps, FlexProps, StackProps } from "@chakra-ui/react";
+import { relative } from "path";
 
 export const navbarStyles:BoxProps={
   
@@ -6,6 +7,12 @@ export const navbarStyles:BoxProps={
       bgColor:"brand.primary",
       zIndex:10,
      
+}
+export const franchiseStyles:BoxProps={
+    textDecoration:"underline",
+    textDecorationColor:"brand.primaryDark",
+    textUnderlineOffset:"5px",
+    
 }
 export const desktopNavStyles:FlexProps={
     justify:"space-between",
@@ -15,12 +22,14 @@ export const desktopNavStyles:FlexProps={
     boxShadow:"md",
     fontWeight:"semibold",
     display:{base:"none",md:"none", lg:'flex'}
+   
 }
 export const logostyles:StackProps={
     direction:"row",
     alignItems:"center"
 }
 export const liststyles:StackProps={
+    position:"relative",
     direction:"row",
     justify:"center",
     gap:8,
@@ -28,6 +37,7 @@ export const liststyles:StackProps={
     alignItems:"center",
     ml:"10rem",
     fontFamily:"Playfair Display",
+    fontSize:'15px',
     textColor:"brand.primaryDark",
 }
 export const cartstyles:StackProps={

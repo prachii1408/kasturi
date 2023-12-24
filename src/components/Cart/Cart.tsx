@@ -1,3 +1,4 @@
+'use client'
 import { AppContext } from '@/context/AppContext'
 import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Link, useDisclosure,Text } from '@chakra-ui/react';
 import React, { useContext, useRef } from 'react'
@@ -88,7 +89,7 @@ const Cart = () => {
                 >
                   Clear Cart
                 </Button>
-                <Link href="/checkout">
+                {/* <Link href="/checkout">
                   <Button
                   variant={"outline"}
                     bgColor="brand.primaryMedium"
@@ -105,7 +106,7 @@ const Cart = () => {
                   >
                     Checkout
                   </Button>
-                </Link>
+                </Link> */}
               </Box>
               <Box fontWeight="bold" textColor={"brand.primaryDark"} fontFamily={"Bakervvile"}>Total Items: {calculateItemsTotal(cart)}</Box>
             </DrawerFooter>

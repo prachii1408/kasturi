@@ -1,3 +1,4 @@
+'use client'
 import { AppContext } from '@/context/AppContext';
 import { IItem } from '@/model';
 import { Grid, GridItem, HStack, Button,Image,Text,Input } from '@chakra-ui/react';
@@ -21,11 +22,12 @@ const CartItem = ({item}:CartItemProps) => {
     <GridItem>
       <Link href={`/products/${item.slug}`}>
         <Image
-          src={item.mainImg}
+          src={item.mainimage}
           boxSize="40px"
           rounded="full"
           borderWidth="1px"
           borderColor="gray.300"
+          alt="mainImage"
         />
       </Link>
     </GridItem>

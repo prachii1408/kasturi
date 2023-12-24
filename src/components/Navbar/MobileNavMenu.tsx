@@ -1,10 +1,12 @@
 'use client'
 
-import { useDisclosure, Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, DrawerFooter,Input, IconButton, Link ,Box} from '@chakra-ui/react'
+import { useDisclosure, Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, DrawerFooter,Input, IconButton ,Box} from '@chakra-ui/react'
+import Link from 'next/link'
 // import { Input } from 'postcss'
 import React from 'react'
 import {VscListFlat} from "react-icons/vsc"
 import { NavItem } from '@/model'
+import AppLogo from '../AppLogo'
 interface items{
     navItems:NavItem[]
 }
@@ -25,17 +27,30 @@ const MobileNavMenu = ({navItems}:items) => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>KJ</DrawerHeader>
+          <DrawerHeader><AppLogo/></DrawerHeader>
 
           <DrawerBody>
             {
-                 navItems.map((navItem,i)=><Link key={i} href={navItem.href}  >
+                 navItems.map((navItem,i)=>
+                 <Link key={i} href={`materials/${navItem.href}`}  >
                      <Box p="0.5rem" _hover={{bgColor:"brand.primary"}} textColor={"brand.primaryDark"} fontFamily={"Baskervvile"} >
                         {navItem.label}
                      </Box>
-                 </Link>)
+                 </Link>
+                 )
                 
             }
+             <Link  href={`materials/franchise`}  >
+                     <Box p="0.5rem" 
+                     _hover={{bgColor:"brand.primary"}} 
+                     textColor={"brand.primaryDark"} 
+                     fontFamily={"Baskervvile"} 
+                     textDecoration={"underline"}
+                     textUnderlineOffset={"5px"}
+                     textDecorationColor={"brand.primaryDark"}>
+                        FRANCHISE
+                     </Box>
+                 </Link>
           
           </DrawerBody>
         </DrawerContent>

@@ -18,10 +18,20 @@ const props={
     '--brand-primary-medium':colors.brand.primaryMedium,
 
 }
+export const customTheme = extendTheme({
+    breakpoints: {
+      sm: '500px', // Small screens
+      md: '767px', // Medium screens
+      lg: '990px', // Large screens
+      xl: '1350px', // Extra-large screens
+    },
+  });
+  
+ 
 
-export const msTheme=buildLegacyTheme({
-'--focus-color':props['--brand-primary-dark'],
-'--brand-primary':props['--brand-primary'],
-'--component-text-color':props['--brand-primary-dark'],
-'--default-button-color':props['--brand-primary']
-})
+// export const msTheme=buildLegacyTheme({
+// '--focus-color':props['--brand-primary-dark'],
+// '--brand-primary':props['--brand-primary'],
+// '--component-text-color':props['--brand-primary-dark'],
+// '--default-button-color':props['--brand-primary']
+// })

@@ -1,8 +1,14 @@
 export type ItemKey='cart' | 'wishlist' |'checkout';
 
+export interface subcat{
+    title:string,
+    href:string
+}
+
 export interface NavItem{
     label:string,
-    href:string
+    href:string,
+    submenu:subcat[]
 }
 export interface Product{
     id:string,
@@ -10,19 +16,24 @@ export interface Product{
     description:string,
     slug:string,
     category?:Category,
-    mainImg:string
+    mainimage:string,
+    gender?:Category,
+    wt:number
 }
 
 export interface Category{
     id:string,
     name:string,
     image:string,
-    slug:string
+    slug:string,
+    products:Product[]
 }
+
+
 export interface featuredItems{
- topSellers:Product[],
- giftingRange:Product[],
- topCategories:Category[],
+ bestSellers:Product[],
+ gifting:Product[],
+//  topCategories:Category[],
 }
 export interface CustomBreadCrumbItem{
     name:string;

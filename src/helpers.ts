@@ -3,24 +3,106 @@ import { CustomBreadCrumbItem, IItem, NavItem } from "./model";
 export const navItems:NavItem[]=[
     {
         label:'GOLD',
-        href:'/gold'
+        href:'/gold',
+        submenu:[
+          {
+            title:'Bracelets',
+            href:'/bracelets'
+          },
+          {
+            title:'Chain',
+            href:'/chain'
+          },
+          {
+            title:'Mangalsutra',
+            href:'/mangalsutra'
+          }
+        ]
+         
     },
     {
-        label:'STIRLING SILVER',
-        href:'/stirling-silver'
+        label:'SILVER',
+        href:'/silver',
+        submenu:[
+          {
+            title:'Chain',
+            href:'/chain'
+          },
+          {
+            title:'Bracelets',
+            href:'/bracelets'
+          },
+          {
+            title:'Mangalsutra',
+            href:'/mangalsutra'
+          },
+        
+        ]
     },
     {
         label:'DIAMOND',
-        href:'/diamond'
+        href:'/diamond',
+        submenu:[
+          {
+            title:'Chain',
+            href:'/chain'
+          },
+          {
+            title:'Bracelets',
+            href:'/bracelets'
+          },
+          {
+            title:'Mangalsutra',
+            href:'/mangalsutra'
+          },
+          
+        ]
     },
-    {
-        label:'FRANCHISE',
-        href:'/franchise'
-    },
-    {
-        label:'CONTACT',
-        href:'/contact'
-    },
+    // {
+    //     label:'FRANCHISE',
+    //     href:'/franchise',
+    //     submenu:[
+    //       {
+    //         title:'Mangalsutra',
+    //         href:'/mangalsutra'
+    //       },
+    //       {
+    //         title:'Bracelets',
+    //         href:'/bracelets'
+    //       },
+    //       {
+    //         title:'Chain',
+    //         href:'/chain'
+    //       },
+         
+    //     ]
+    // },
+    // {
+    //     label:'CONTACT',
+    //     href:'#footer',
+    //     submenu:[
+    //       {
+    //         title:'phone',
+    //         href:'/bracelets'
+    //       },
+    //       {
+    //         title:'Bracelets',
+    //         href:'/bracelets'
+    //       },
+    //       {
+    //         title:'Bracelets',
+    //         href:'/bracelets'
+    //       },
+    //       {
+    //         title:'Bracelets',
+    //         href:'/bracelets'
+    //       },
+    //       {
+    //         title:'Bracelets',
+    //         href:'/bracelets'
+    //       }
+    //     ]
+    // },
 ]
 
 export const getSubstring=(text:string,substringEnd:number):string=>{
@@ -29,13 +111,13 @@ export const getSubstring=(text:string,substringEnd:number):string=>{
 
 export const defaultBreadCrumbItems:CustomBreadCrumbItem[]=[
     {
-      name:"Products",
-      link:"/products"
+      name:"Home",
+      link:"/"
     },
-    {
-      name:"Categories",
-      link:"/categories"
-    },
+    // {
+    //   name:"Categories",
+    //   link:"/"
+    // },
   
   ];
 

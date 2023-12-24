@@ -1,4 +1,6 @@
+'use client'
 import { IContext, IState, ItemKey, Product } from '@/model'
+import { useLocalStorage } from '@mantine/hooks';
 import React,{ReactNode, useState,createContext } from 'react'
 
 export const AppContext=createContext<IContext> (null as any);
@@ -12,7 +14,7 @@ const initialState:IState={
 }
 
 export const AppContextProvider = ({children}:IAppContextProviderProps) => {
-    const [state,setState]=useState <IState>(initialState);
+    const [state,setState]=useLocalStorage <IState>({key:'Kasturi Jewellers',defaultValue:initialState});
     const addItem=(key:ItemKey,product:Product,count?:number)=>{
         setState((prevState)=>({
             ...prevState,
