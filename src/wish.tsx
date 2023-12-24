@@ -16,7 +16,7 @@ const Wish = ({product}:AddToWishlistProps) => {
     <>
       {
       isAdded('wishlist',product.id)?(
-        <IconButton ml={"15rem"} 
+        <IconButton 
         icon={< BsHeartFill />} 
         bg={"brand.dark"} 
         textColor={"brand.primary"}
@@ -26,7 +26,7 @@ const Wish = ({product}:AddToWishlistProps) => {
         >
       
         </IconButton>
-      ):(  <IconButton ml={"15rem"} 
+      ):(  <IconButton 
       icon={< BsHeart />} 
       bg={"brand.dark"} 
       textColor={"brand.primary"}

@@ -1,5 +1,5 @@
 'use client'
-import { Card, CardBody, Stack, Heading,Image,Text, IconButton } from '@chakra-ui/react'
+import { Card, CardBody, Stack, Heading,Image,Text, Box } from '@chakra-ui/react'
 import React from 'react'
 import Link from 'next/link'
 import AddToCart from './components/AddToCart'
@@ -24,8 +24,10 @@ const ProductCard = ({product}:productCardProps) => {
  
     <Card maxW='xs' m="0.5rem" background={"#CEA988"} _hover={{boxShadow:"xl"}} >
   <CardBody >
-  
-<Wish product={product} />
+  <Box textAlign={'right'}>
+  <Wish product={product} />
+  </Box>
+
 
 <Link href={`/products/${product.slug}`}>
     <Image

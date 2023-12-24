@@ -90,7 +90,7 @@ const Details = ({product}:detailsProps) => {
             <a href={waMeLink}>
               <HStack>
                 <Text>WhatsApp Now</Text>
-                <Image width={"1.5rem"} src="/whatsapp2.png" alt="whatsapp"></Image>
+                <Image width={"18px"} src="/whatsapp2.png" alt="whatsapp"></Image>
               </HStack>
             
             </a>
