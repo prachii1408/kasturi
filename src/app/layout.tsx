@@ -13,11 +13,7 @@ import { AppContextProvider } from '@/context/AppContext';
 
 
 
-export const metadata={
-    icons:{
-      icon:['/favicon.ico?v=4']
-    }
-}
+
 
 
 export default function RootLayout({
