@@ -32,7 +32,7 @@ const MobileNavMenu = ({navItems}:items) => {
           <DrawerBody>
             {
                  navItems.map((navItem,i)=>
-                 <Link key={i} href={`materials/${navItem.href}`}  >
+                 <Link key={i} href={`/materials${navItem.href}`}  >
                      <Box p="0.5rem" _hover={{bgColor:"brand.primary"}} textColor={"brand.primaryDark"} fontFamily={"Baskervvile"} >
                         {navItem.label}
                      </Box>
@@ -40,7 +40,7 @@ const MobileNavMenu = ({navItems}:items) => {
                  )
                 
             }
-             <Link  href={`materials/franchise`}  >
+             <Link  href={`/materials/franchise`}  >
                      <Box p="0.5rem" 
                      _hover={{bgColor:"brand.primary"}} 
                      textColor={"brand.primaryDark"} 

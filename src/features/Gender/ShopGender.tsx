@@ -20,9 +20,9 @@ const ShopGender = () => {
      <Text {...topTextStyles} fontSize={{base:"1rem",md:"1.4rem",lg:"2rem"}} w={"75vw"} mx={"auto"}> Unleash the elegance and style that matches your gender with our exquisite collection, as
                 you discover the perfect jewellery pieces that speak to your individuality.</Text>
     <Stack textAlign={"center"} direction={"column"} mb="2rem">
-        <Image src="Men.png" w={{base:"9rem",md:"14rem",lg:"18rem"}} mx={"auto"} alt="gender"></Image>
+        <Image src="Men.png" w={{base:"7.6rem",md:"14rem",lg:"18rem"}} mx={"auto"} alt="gender"></Image>
         <Link href='/gender/men'>
-        <Button variant="outline" backgroundColor={"brand.primaryMedium"} borderColor={"brand.primaryDark"}  size="md" w={{base:"9rem",md:"14rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
+        <Button variant="outline" backgroundColor={"brand.primaryMedium"} borderColor={"brand.primaryDark"}  size="md" w={{base:"7.6rem",md:"14rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
     Explore Now
     </Button>
         </Link>
@@ -30,18 +30,18 @@ const ShopGender = () => {
     </Stack>
     <Flex display={"flex"} justifyContent={"space-evenly"} mb="2rem">
     <Stack textAlign={"center"} direction={"column"} >
-        <Image src="Women.png" w={{base:"9rem",md:"14rem",lg:"18rem"}} mx={"auto"} alt="gender"></Image>
+        <Image src="Women.png" w={{base:"7.6rem",md:"14rem",lg:"18rem"}} mx={"auto"} alt="gender"></Image>
         <Link href="/gender/women">
-        <Button variant="outline" backgroundColor={"brand.primaryMedium"} borderColor={"brand.primaryDark"}  size="md" w={{base:"9rem",md:"14rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
+        <Button variant="outline" backgroundColor={"brand.primaryMedium"} borderColor={"brand.primaryDark"}  size="md" w={{base:"7.6rem",md:"14rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
     Explore Now
     </Button>
         </Link>
       
     </Stack >
     <Stack textAlign={"center"} direction={"column"}>
-        <Image src="Kid.png" w={{base:"9rem",md:"14rem",lg:"18rem"}} mx={"auto"} alt="gender"></Image>
+        <Image src="Kid.png" w={{base:"7.6rem",md:"14rem",lg:"18rem"}} mx={"auto"} alt="gender"></Image>
         <Link href="/gender/kids">
-        <Button variant="outline" backgroundColor={"brand.primaryMedium"} borderColor={"brand.primaryDark"}  size="md" w={{base:"9rem",md:"14rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
+        <Button variant="outline" backgroundColor={"brand.primaryMedium"} borderColor={"brand.primaryDark"}  size="md" w={{base:"7.6rem",md:"14rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
     Explore Now
     </Button>
         </Link>
