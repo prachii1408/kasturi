@@ -23,7 +23,7 @@ const JewelryCare = () => {
             <Text w="30vw" textColor="brand.primaryDark" fontFamily={"Baskervville"} fontStyle={"italic"} fontSize={{base:"1.2rem",md:"2rem",lg:"2.5rem"}} mt={{base:"1rem",md:"1.2rem",lg:"1.7rem"}}>Your Jewellery Collection deserves 
           the best care possible</Text>
           <Button variant="outline" backgroundColor={"brand.primaryMedium"}  size="md" w={{base:"6.5rem",md:"10rem",lg:"18rem"}} fontFamily={"Playfair Display"} textColor={"brand.primaryDark"} mx={"auto"}>
-            <Link href="/care-guide">Explore Now</Link>
+            <Link href="/care-guide">Explore</Link>
     
     </Button>
           </Box>
