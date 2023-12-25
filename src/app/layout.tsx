@@ -4,6 +4,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 
+
 import Swiper from 'swiper';
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
@@ -12,7 +13,11 @@ import { AppContextProvider } from '@/context/AppContext';
 
 
 
-
+export const metadata={
+    icons:{
+      icon:['/favicon.ico?v=4']
+    }
+}
 
 
 export default function RootLayout({
@@ -20,10 +25,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+ 
   return (
     <html lang="en">
       <head>
       <title>Kasturi Jewellers</title>
+      
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
